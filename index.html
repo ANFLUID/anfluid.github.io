@@ -168,20 +168,27 @@
   <div class="hero-body">
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/outline.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Overview of the proposed ANFluid. ANFluid is composed of Data Preprocessing (DP), PAS and DFTL. DP is responsible for generating a depth map and initial motion field from input images and prompts. In init Motion, different colors represent the direction of pixel movement, while the color saturation indicates the speed of motion. PAS estimates the motion field, and DFTL exploits a multi-scale wrapping image texture feature learning network (MWT) and a bidirectional self-supervised optical flow estimation network (BSF) to achieves texture prediction. MWT creates fluid animations iteratively by extracting and wrapping image features based on estimated motion field. BSF enhances texture feature association by providing dual-flow constrained motion for MWT during training.
+
+       <!-- First item -->
+       <div class="item has-text-centered">
+        <!-- Image centered -->
+        <img src="static/images/outline.jpg" alt="MY ALT TEXT" style="display: block; margin: 0 auto;"/>
+        <!-- Text centered, justified and bold -->
+        <h2 class="subtitle has-text-justified">
+          <strong>Overview of the proposed ANFluid.</strong> ANFluid is composed of Data Preprocessing (DP), PAS and DFTL. DP is responsible for generating a depth map and initial motion field from input images and prompts. In init Motion, different colors represent the direction of pixel movement, while the color saturation indicates the speed of motion. PAS estimates the motion field, and DFTL exploits a multi-scale wrapping image texture feature learning network (MWT) and a bidirectional self-supervised optical flow estimation network (BSF) to achieves texture prediction. MWT creates fluid animations iteratively by extracting and wrapping image features based on estimated motion field. BSF enhances texture feature association by providing dual-flow constrained motion for MWT during training.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/BSF.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Bidirectional self-supervised optical flow estimation. In training, bidirectional video sequences are input into the optical flow estimation network to generate optical flow for both forward and backward sequences, enforcing consistency constraints between forward and backward flow.
+
+      <!-- Second item -->
+      <div class="item has-text-centered">
+        <!-- Image centered -->
+        <img src="static/images/BSF.jpg" alt="MY ALT TEXT" style="display: block; margin: 0 auto;"/>
+        <!-- Text centered, justified and bold -->
+        <h2 class="subtitle has-text-justified">
+          <strong>Bidirectional self-supervised optical flow estimation.</strong> In training, bidirectional video sequences are input into the optical flow estimation network to generate optical flow for both forward and backward sequences, enforcing consistency constraints between forward and backward flow.
         </h2>
       </div>
+
       <!-- <div class="item"> -->
         <!-- Your image here -->
         <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
@@ -239,20 +246,20 @@
             type="video/mp4">
           </video>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
+        <!-- <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
             <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
+            <!-- <source src="static/videos/carousel2.mp4"
             type="video/mp4">
           </video>
         </div>
         <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
             <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
+            <!-- <source src="static/videos/carousel3.mp4"
             type="video/mp4">
           </video>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
